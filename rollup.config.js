@@ -19,7 +19,7 @@ export default {
   },
   plugins: [
     resolve({ browser: true }),
-    html({ link: './bundle.css', script: './bundle.js' }),
+    html({ html: { lang : 'en'}, meta: [ {charset: "UTF-8"}, {'http-equiv' : 'X-UA-Compatible', content: 'IE=edge'}, {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}], link: './bundle.css', script: './bundle.js', title: `fenndev's portfolio` }),
     commonjs(),
 		typescript({ sourceMap: !production, inlineSources: !production }),
     sass(),

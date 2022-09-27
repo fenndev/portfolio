@@ -20,6 +20,7 @@
   "homepage": "https://github.com/fenndev/portfolio#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-html": "^0.2.4",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0",

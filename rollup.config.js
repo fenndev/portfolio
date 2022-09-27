@@ -5,6 +5,7 @@ import typescript from '@rollup/plugin-typescript';
 import preprocess from 'svelte-preprocess';
 import sass from 'rollup-plugin-sass';
 import css from 'rollup-plugin-css-only';
+import html from '@rollup/plugin-html';
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -18,6 +19,7 @@ export default {
   },
   plugins: [
     resolve({ browser: true }),
+    html({ link: './bundle.css', script: './bundle.js' }),
     commonjs(),
 		typescript({ sourceMap: !production, inlineSources: !production }),
     sass(),

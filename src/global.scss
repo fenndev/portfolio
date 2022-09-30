@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'JB Mono';
+    src: url('../public/fonts/JetbrainsMono-Regular.woff2') format('woff2'),
+         url('../public/fonts/JetbrainsMono-Bold.woff2') format('woff2');
+}
+
+$font-main: 'JB Mono', monospace;

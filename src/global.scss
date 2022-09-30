@@ -1,7 +1,19 @@
 @font-face {
     font-family: 'JB Mono';
-    src: url('../public/fonts/JetbrainsMono-Regular.woff2') format('woff2'),
-         url('../public/fonts/JetbrainsMono-Bold.woff2') format('woff2');
+    src: url('../public/fonts/JetbrainsMono-Regular.woff2') format('woff2')
 }
 
+@font-face {
+    font-family: 'JB Mono Bold';
+    src: url('../public/fonts/JetbrainsMono-Bold.woff2') format('woff2');
+}
+
+// Fonts
 $font-main: 'JB Mono', monospace;
+$font-main-bold: 'JB Mono Bold', monospace;
+
+// Colors
+
+$color-white: #FAF5F0;
+$color-black: #08090A;
+$color-mint: #54DEA7;

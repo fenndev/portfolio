@@ -19,10 +19,19 @@ export default {
   },
   plugins: [
     resolve({ browser: true }),
-    html({ html: { lang : 'en'}, meta: [ {charset: "UTF-8"}, {'http-equiv' : 'X-UA-Compatible', content: 'IE=edge'}, {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}], link: './bundle.css', script: './bundle.js', title: `fenndev's portfolio` }),
+    
     commonjs(),
 		typescript({ sourceMap: !production, inlineSources: !production }),
     sass(),
     css({ output: 'bundle.css' }),
+    html({ html: 
+      { lang : 'en'}, 
+      link: './bundle.css', 
+      meta: [ 
+        {charset: "UTF-8"}, 
+        {'http-equiv' : 'X-UA-Compatible', content: 'IE=edge'}, 
+        {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}], 
+        
+        script: './bundle.js', title: `fenndev's portfolio` }),
     svelte({ preprocess: preprocess(), emitCss: true })],
 };

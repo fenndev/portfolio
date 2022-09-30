@@ -5,7 +5,7 @@
 </h3>
 
 <style lang="scss">
-    @import '../global.scss';
+    @import '../../global.scss';
 
     h1 {
         font-family: $font-main-bold;

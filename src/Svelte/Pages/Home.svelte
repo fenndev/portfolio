@@ -11,13 +11,3 @@
     />
     <NavButtons />
 </div>
-
-<style lang='scss'>
-    @media (min-width: 768px) {
-        
-        .intro {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-</style>

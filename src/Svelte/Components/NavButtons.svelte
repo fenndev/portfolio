@@ -15,32 +15,29 @@
 
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         min-width: 70%;
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+        flex-shrink: 1;
     }
 
     a {
         font-family: $font-main;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: $color-black;
         text-decoration: none;
         padding: 0.75rem;
         border: 4px solid $color-black;
         border-radius: 15px;
+        width: 10rem;
+        text-align: center;
     }
 
     a:hover {
         background-color: $color-mint;
-    }
-
-    @media (min-width: 768px) {
-        nav {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-        }
     }
 </style>

@@ -14,16 +14,10 @@
 
 <style lang='scss'>
     @media (min-width: 768px) {
-        :root {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        
         .intro {
             display: flex;
             flex-direction: column;
-            text-align: left;
         }
     }
 </style>

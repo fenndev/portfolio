@@ -15,7 +15,7 @@
 
     @media only screen and (max-width: 600px) {
         main {
-            padding: 10%;
+            padding: 10% 5%;
         }
     }
 </style>

@@ -7,6 +7,9 @@
 <style lang="scss">
     @import '../../global.scss';
 
+    h1, h2, h3 {
+        max-width: 40ch;
+    }
     h1 {
         font-family: $font-main-bold;
     }

@@ -10,17 +10,17 @@
 
 @font-face {
     font-family: 'JB Mono';
-    src: url('../public/fonts/JetbrainsMono-Regular.woff2') format('woff2')
+    src: url('./assets/fonts/JetBrainsMono-Regular.woff2') format('woff2')
 }
 
 @font-face {
     font-family: 'JB Mono Bold';
-    src: url('../public/fonts/JetbrainsMono-Bold.woff2') format('woff2');
+    src: url('./assets/fonts/JetBrainsMono-Bold.woff2') format('woff2');
 }
 
 // Fonts
-$font-main: 'JB Mono', monospace;
-$font-main-bold: 'JB Mono Bold', monospace;
+$font-main: 'JB Mono';
+$font-main-bold: 'JB Mono Bold';
 
 // Colors
 

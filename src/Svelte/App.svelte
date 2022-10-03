@@ -8,7 +8,6 @@
 </main>
 
 <style lang="scss">
-    @import '../global.scss';
     main {
         padding: 5vh 30%;
     }

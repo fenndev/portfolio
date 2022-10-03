@@ -6,6 +6,7 @@ import preprocess from 'svelte-preprocess';
 import sass from 'rollup-plugin-sass';
 import css from 'rollup-plugin-css-only';
 import html from '@rollup/plugin-html';
+import copy from 'rollup-plugin-copy-assets';
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -33,5 +34,6 @@ export default {
         {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}], 
         
         script: './bundle.js', title: `fenndev's portfolio` }),
+    copy({ assets: ['assets/'] }),
     svelte({ preprocess: preprocess(), emitCss: true })],
 };

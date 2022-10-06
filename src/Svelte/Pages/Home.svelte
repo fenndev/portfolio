@@ -96,6 +96,7 @@
 </section>
 <footer>
     <p>© 2022 fenndev. All rights reserved.</p>
+    <p>Icons courtesy of <a href="https://devicon.dev/">Devicons</a>.</p>
 </footer>
 
 
@@ -144,22 +145,28 @@
         h3 {
             font-size: 1.4rem;
         }
-     }
-
-     .image-grid {
+        
+        div {
         display: grid;
-        //grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
         grid-template-columns: repeat(auto-fit, minmax(max(25%, 10rem), 1fr));
         justify-items: center;
         row-gap: 4rem;
+        }
      }
 
      footer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
         p {
             text-align: center;
             font-size: 0.8rem;
+
+            a {
+                text-decoration: none;
+                color: $color-mint;
+            }
         }
      }
 </style>

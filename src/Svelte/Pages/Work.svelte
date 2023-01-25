@@ -9,59 +9,37 @@
     </p>
 </header>
 <section>
-    <article id='une'>
-        <img src="" alt="A preview of the UNE homepage.">
+    <article>
         <div>
             <h3>United Nations of Earth</h3>
             <p>A webpage for the United Nations of Earth, a fictional government from the video game Stellaris. Made following the <a href="https://www.un.org/styleguide">United Nations web style guide.</a></p>
         </div>
-        <a href="http://">Live Site</a>
-        <a href="http://">GitHub</a>
+        <a class="link-button" href="http://">Live Site</a>
+        <a class="link-button" href="http://">GitHub</a>
     </article>
-    <article id='todah'>
-        <img src="" alt="A preview of the To-Dah! app.">
+    <article>
         <div>
             <h3>To-Dah!</h3>
             <p>A to-do list application made with vanilla Javascript.</p>
         </div>
-        <a href="http://">Live Site</a>
-        <a href="http://">GitHub</a>
+        <a class="link-button" href="http://">Live Site</a>
+        <a class="link-button" href="http://">GitHub</a>
     </article>
-    <article id='une'>
-        <img src="" alt="A preview of the weather.ly app.">
+    <article>
         <div>
             <h3>weather.ly</h3>
             <p>A web-based weather application.</p>
         </div>
-        <a href="http://">Live Site</a>
-        <a href="http://">GitHub</a>
+        <a class="link-button" href="http://">Live Site</a>
+        <a class="link-button" href="http://">GitHub</a>
     </article>
-    <article id='etch-a-sketch'>
-        <img src="" alt="A preview of my Etch-a-Sketch application.">
+    <article>
         <div>
             <h3>Etch-a-Sketch</h3>
             <p>An Etch-a-Sketch application written in vanilla HTML, CSS, and Javascript.</p>
         </div>
-        <a href="https://fenndev.github.io/etch-a-sketch/">Live Site</a>
-        <a href="https://github.com/fenndev/etch-a-sketch">GitHub</a>
-    </article>
-    <article id='dovey'>
-        <img src="" alt="A preview of a website made for a Twitch streamer.">
-        <div>
-            <h3>Clockwork Dovey</h3>
-            <p>A webpage made for a Twitch streamer.</p>
-        </div>
-        <a href="https://fenndev.github.io/dovey-site/">Live Site</a>
-        <a href="https://github.com/fenndev/dovey-site">GitHub</a>
-    </article>
-    <article id='strange'>
-        <img src="" alt="A preview of an online card game site.">
-        <div>
-            <h3>Strangers: The Card Game</h3>
-            <p>A website hosting a card game that I designed and programmed, with Stable Diffusion and Midjourney helping to create the illustrations.</p>
-        </div>
-        <a href="http://">Live Site</a>
-        <a href="https://github.com/fenndev/card-test">GitHub</a>
+        <a class="link-button" href="https://fenndev.github.io/etch-a-sketch/">Live Site</a>
+        <a class="link-button" href="https://github.com/fenndev/etch-a-sketch">GitHub</a>
     </article>
 </section>
 
@@ -81,6 +59,24 @@
 
     section, footer {
         margin-top: 5vh;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .link-button {
+            text-align: center;
+            padding: .5rem;
+            border-radius: 10px;
+            border: 4px solid $color-black;
+            color: $color-black;
+            text-decoration: none;
+        }
+        .link-button:hover {
+            border-color: $color-mint;
+            color: $color-mint;
+        }
     }
 
     section {

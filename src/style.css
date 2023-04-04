@@ -166,6 +166,17 @@ footer {
 /* Media Queries */
 
 @media (max-width: 1024px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__title {
+        font-size: 2rem;
+    }
+
     .hero {
         flex-direction: column;
         align-items: center;
@@ -202,13 +213,5 @@ footer {
         border-bottom: none;
     }
 
-    .header {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
 
-    .header__title {
-        font-size: 2rem;
-    }
 }

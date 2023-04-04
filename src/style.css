@@ -1,3 +1,144 @@
+:root {
+    --accent-color: #a855f7;
+    --accent-color-inactive: #b977f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
+    padding: 4svh 20svw;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10vh;
+    font-family: 'Noto Sans',
+        sans-serif;
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social svg {
+    width: clamp(16px, 5svw, 48px);
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2svw;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex: 2 0 auto;
+}
+
+.hero h2,
+p {
+    max-width: 40ch;
+}
+
+.projects {
+    flex: 2 0 auto;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 5svh;
+}
+
+.projects article {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    flex-wrap: wrap;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5svh;
+}
+
+.description {
+    flex: 1 1 auto;
+    padding: 1vh 1vw;
+    color: white;
+}
+
+.description p {
+    max-width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+
+.accent,
+article a {
+    color: var(--accent-color);
+}
+
+.project-link {
+    display: flex;
+    color: var(--accent-color);
+    flex: 1 1 auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-link {
+    border-right: 1px solid var(--accent-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.hero h2 {
+    font-size: 4rem;
+}
+
+.hero p,
+.hero a {
+    font-size: 1.2rem;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    gap: 3svh;
+}
+
+.button__resume {
+    border: 1px solid var(--accent-color);
+    align-self: flex-start;
+    padding: 1svw 4svh;
+    color: var(--accent-color);
+}
+
+.button__resume:visited {
+    color: var(--accent-color);
 }

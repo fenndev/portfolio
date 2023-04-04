@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.1",
   "description": "Fenndev's portfolio website",
-  "main": "./src/main.ts",
+  "main": "./src/index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -129,7 +129,7 @@ main {
 }
 
 .project__description {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     padding: 2rem;
     color: white;
     display: flex;
@@ -143,7 +143,7 @@ main {
 
 .project__links {
     display: flex;
-    flex: 1 0 20%;
+    flex: 1 1 100%;
     color: var(--accent-color);
     background-color: white;
 }
@@ -158,6 +158,25 @@ main {
 
 .project__link--code {
     border-right: 1px solid var(--accent-color);
+}
+
+.project__link:hover {
+    animation: button-hover .25s linear 0s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-hover {
+    from {
+        color: var(--accent-color);
+        background-color: white;
+    }
+
+    to {
+        color: white;
+        background-color: var(--accent-color);
+        border: none;
+    }
+
 }
 
 /* Footer */
